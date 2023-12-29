@@ -44,7 +44,15 @@ const fetchProductsOnMain = async (): Promise<IProduct[]> => {
     }
   });
   if (!data.ok) {
-    throw new Error('Failed to fetch products');
+    console.log('Failed to fetch product data' + data);
+    return dummyData = {
+	product_id: '',
+	settings: settings,
+	apiClient: apiCLient,
+        tags: ['products']
+    }.json();
+
+    //throw new Error('Failed to fetch products');
   }
 
   return data.json();
