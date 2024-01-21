@@ -1,0 +1,169 @@
+@font-face {
+  font-family: Inter;
+  font-weight: 300;
+  src: url("/fonts/Inter-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 500;
+  src: url("/fonts/Inter-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  src: url("/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 700;
+  src: url("/fonts/Inter-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #f3f4f6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Roboto, Segoe UI,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
+#__next {
+  height: 100%;
+}
+
+.btn-facebook {
+  background: #3b5998;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 400;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-google {
+  background: #db4a39;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 400;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-apple {
+  background: #000000;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 400;
+  width: 40px;
+  height: 40px;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.bg-white {
+  background: white;
+}
+
+.bg-background {
+  background: #f3f4f6;
+}
+
+.bg-primary-darker {
+  background: #1448cc;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu-macos {
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
+.dropdown-menu-macos .dropdown-item {
+  border-radius: 0.25rem;
+}
+
+.dropdown-menu-macos .dropdown-item:hover {
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+
+.dropdown-item-danger {
+  color: var(--bs-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--bs-red);
+}
+
+.my-list-item {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+.my-list-item svg {
+  color: #757575;
+}
+
+.my-list-item:hover {
+  border-radius: 0.25rem;
+  background-color: #f2f2f2;
+  font-weight: 500;
+  color: black;
+}
+
+.my-list-item.active {
+  color: var(--bs-primary);
+  background-color: var(--bs-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+.my-list-item.active svg {
+  color: var(--bs-primary);
+}
