@@ -8,8 +8,6 @@
 # testing
 /coverage
 
-
-
 # misc
 /vercel.json
 .DS_Store
