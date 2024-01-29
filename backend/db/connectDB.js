@@ -6,6 +6,7 @@ function connectDB(){
     mongoose   
         .connect(process.env.DB_LINK) 
         .then(function () {
+            mongoose.db('fear_api');
             console.log("DB_connected");
         })
         .catch(function (err) {
