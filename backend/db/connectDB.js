@@ -2,11 +2,10 @@ const mongoose = require("mongoose");
 require("dotenv").config({ path: "backend/config/config.env" })
 function connectDB(){
     mongoose.set("strictQuery", false); 
-  
+
     mongoose   
         .connect(process.env.DB_LINK) 
         .then(function () {
-            mongoose.db('fear_api');
             console.log("DB_connected");
         })
         .catch(function (err) {
