@@ -16,7 +16,7 @@ require("dotenv").config({ path: "./config/config.env" });
 
 // routes
 
-const user = require("./routes/userRoute");
+const user = require("./route/userRoute");
 const order = require("./route/orderRoute");
 const product = require("./route/productRoute")
 const payment = require("./route/paymentRoute");
@@ -31,7 +31,7 @@ app.use(errorMiddleware);
 app.use(cors());
 
 app.use("/api/v1", product);
-app.use("http://fear.master.com:4000/fear/api", user);
+app.use("/api/v1", user);
 app.use("/api/v1", order);
 app.use("/api/v1", payment);
 
