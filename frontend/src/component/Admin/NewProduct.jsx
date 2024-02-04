@@ -63,8 +63,6 @@ function NewProduct() {
     setIsCategory(true);
   };
 
-
-  .
   const handleImageUpload = () => {
     fileInputRef.current.click();
   };
