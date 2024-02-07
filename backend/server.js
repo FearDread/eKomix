@@ -1,24 +1,18 @@
 const app = require("./app");
 const dotenv = require("dotenv");
-const connectDB = require("./db/connectDB")
+const DB = require("./db");
 const cloudinary = require("cloudinary");
-
-// Handling Uncaught Execption => anything not defind Uncaught Execption 
 
 process.on("uncaughtException" , (err) =>{
     console.log(`Error , ${err.message}`);
     console.log(`Shutting down the server due to Uncaught Exception`);
     process.exit(1);
 })
-
-
-//config =>
  dotenv.config({path : "backend/config/config.env"})
-// Connect With MongoDB
-connectDB();
 
 
-// conncet with cloudinary
+ // Connect With MongoDB
+DB.run();
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,
