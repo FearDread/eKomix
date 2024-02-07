@@ -2,6 +2,7 @@ const app = require("./app");
 const dotenv = require("dotenv");
 const DB = require("./db");
 const cloudinary = require("cloudinary");
+const connectDB = require("./db/connectDB");
 
 process.on("uncaughtException" , (err) =>{
     console.log(`Error , ${err.message}`);
@@ -13,6 +14,7 @@ process.on("uncaughtException" , (err) =>{
 
  // Connect With MongoDB
 DB.run();
+//connectDB();
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,
