@@ -1,0 +1,36 @@
+.loading-container {
+      
+}
+
+.spinner {
+   position: relative;
+}
+
+.spinner::before,
+.spinner::after {
+   content: '';
+   border-radius: 50%;
+   position: absolute;
+   transform: translate(-50%, -50%);
+}
+
+.spinner::before {
+   width: 11.2px;
+   height: 11.2px;
+   background: rgba(69, 62, 62, 0.83);
+}
+
+.spinner::after {
+   width: 40px;
+   height: 40px;
+   animation: spinner-y7ej37 1.4s infinite linear;
+   border: 8px solid rgba(69, 62, 62, 0.83);
+   border-left-color: transparent;
+   border-right-color: transparent;
+}
+
+@keyframes spinner-y7ej37 {
+   to {
+      transform: translate(-50%, -50%) rotate(360deg);
+   }
+}

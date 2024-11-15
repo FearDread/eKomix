@@ -1,0 +1,162 @@
+.trendy-card {
+  margin-bottom:30px;
+}
+
+.trendyProductContainer {
+  position: relative;
+    padding: 5px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    background: white;
+  }
+  
+  .trendyProductContainer:hover {
+    box-shadow: 13px 13px 77px -24px #000000b9;
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07)
+  }
+  
+  .trendyProductImages {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    -webkit-transition: all 0.2s cubic-bezier(0.99, 0.99, 0, 0.61);
+    transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+  }
+  
+  .trendyProductImages img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    object-fit: cover;
+    transition: opacity 0.3s linear;
+  }
+  
+  .trendyProductImages .trendyProduct_back {
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+  }
+  
+  .trendyProductContainer:hover .trendyProduct_back {
+    opacity: 1;
+  }
+  
+  .trendyProductImages .trendyProduct_front {
+    z-index: 2;
+    transition: opacity 0.3s linear;
+    cursor: pointer;
+  }
+  
+  .trendyProductContainer:hover .trendyProduct_front {
+    opacity: 0;
+  }
+  
+  .trendyProductContainer h4 {
+    position: relative;
+    top: 320px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(253, 253, 253);
+    transition: all 0.2s cubic-bezier(0.99, 0.99, 0, 0.61);
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .trendyProductContainer:hover h4 {
+    top: 250px;
+    border: 1px solid grey;
+
+  }
+  
+  .trendyProductInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .trendyProductCategoryWishlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .trendyProductCategoryWishlist p {
+    color: #767676;
+    font-size: 14px;
+  }
+  
+  .trendyProductNameInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .trendyProductNameInfo a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .trendyProductNameInfo h5 {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .trendyProductRatingReviews {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .trendyProductRatingReviews span {
+    color: #767676;
+    font-size: 14px;
+  }
+  
+  .trendyProductRatingStar {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .discoverMore p {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .discoverMore p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60%;
+    border-bottom: 2px solid black;
+    transition: width 0.2s ease;
+  }
+  
+  .discoverMore p:hover::after {
+    width: 100%;
+  }
+  
+  .discoverMore a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .trendyProductImagesCart {
+    display: none;
+  }
+  
